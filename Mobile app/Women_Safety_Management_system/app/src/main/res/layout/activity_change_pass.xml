@@ -1,0 +1,119 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/home_scroll"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+     android:background="@drawable/bg1" >
+
+   
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <TableRow
+            android:gravity="center"
+            android:paddingTop="40px" >
+
+            <TextView
+                android:id="@+id/status"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:layout_span="2"
+                android:text="Update Password"
+                android:textColor="#ff6347"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow android:layout_marginTop="20dip" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:text="Current Pass :"
+                android:textColor="#000000"
+                android:textSize="20sp" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/cntpass"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="20dip"
+                android:layout_weight="1"
+                android:hint="Enter Current Pass"
+                android:inputType="textPassword" >
+            </EditText>
+            
+        </TableRow>
+
+        <TableRow android:layout_marginTop="20dip" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:text="New Pass :"
+                android:textColor="#000000"
+                android:textSize="20sp" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/npass"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="20dip"
+                android:layout_weight="1"
+                android:hint="Enter New Pass"
+                android:inputType="textPassword" >
+            </EditText>
+        </TableRow>
+
+        <TableRow android:layout_marginTop="20dip" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:text=" Confirm Pass :"
+                android:textColor="#000000"
+                android:textSize="20sp" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/conpass"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="20dip"
+                android:layout_weight="1"
+                android:hint="Enter Confirm Pass"
+                android:inputType="textPassword" >
+            </EditText>
+        </TableRow>
+
+        <TableRow android:layout_marginTop="20dip" >
+
+            <TextView
+                android:id="@+id/register_error"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:text=" "
+                android:textColor="#e30000"
+                android:textSize="20sp" >
+            </TextView>
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="20dip"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/btnchge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Update" >
+            </Button>
+        </TableRow>
+    </TableLayout>
+
+</ScrollView>
